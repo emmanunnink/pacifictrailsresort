@@ -1,18 +1,25 @@
-/* Emma Nunnink 3/20/2021 */
-body {background-color: #90C7E3; background-image: linear-gradient(to bottom, #FFFFFF, #90C7E3); background-repeat: no-repeat;
-	color: #666666; font-family: 'Arial', 'Helvetica', 'sans-serif';}
+/* Emma Nunnink 4/3/2021 */
+body {background-color: #eaeaea; color: #666666; font-family: 'Arial', 'Helvetica', 'sans-serif';}
 
-header {background-color: #002171; background-image: url(images/sunset.jpg); background-repeat: no-repeat;
-background-position: right; color: #FFFFFF; padding-top: 15px; text-align: center; height: 60px;
+header {background-color: #002171; color: #FFFFFF; padding-top: 30px; padding-left: 3em; text-align: center; height: 120px;
 font-family: 'Georgia', 'Times New Roman', 'serif';}
+header a:link {color: #FFFFFF; text-decoration: none;}
+header a:visited {color: #FFFFFF; text-decoration: none;}
+header a:hover {color: #90C7E3; text-decoration: none;}
 
-nav {background-color: #FFFFFF; font-weight: bold; text-align: center; padding: 1em;}
-
+nav {font-weight: bold; padding: 1.5em; font-size: 120%; float: left; width: 160px;}
 nav a {text-decoration: none;}
+nav a:link {color: #5C7FA3;}
+nav a:visited {color: #344873;}
+nav a:hover {color: #A52A2A;}
 
-main {padding-top: 1px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px; display: block;}
+nav ul {margin: 0%; padding-left: 0%; font-size: 1.2em; list-style-type: none;}
 
-h1 {color: #FFFFFF; font-family: 'Georgia', 'Times New Roman', 'serif'; margin: 0;}
+main {background-color: #FFFFFF; padding-top: 1px; padding-right: 20px; padding-bottom: 20px; padding-left: 30px; display: block; margin-left: 190px; overflow: auto;}
+
+section {float: left; width: 33%; padding-left: 2em; padding-right: 2em;}
+
+h1 {color: #FFFFFF; font-family: 'Georgia', 'Times New Roman', 'serif'; margin: 0; font-size: 3em; letter-spacing: .25em;}
 
 h2 {color: #1976D2; font-family: 'Georgia', 'Times New Roman', 'serif'; text-shadow: 1px 1px #CCCCCC; }
 
@@ -22,15 +29,16 @@ dt {color: #002171;}
 
 .resort {color: #1976D2; font-weight: bold;}
 #contact {font-size: 90%}
-#wrapper {background-color: #FFFFFF; margin-left: auto; margin-right: auto; width: 80%; min-width: 960px; max-width: 2048px; box-shadow: 3px 3px 3px #333333}
-#homehero {height: 300px; background-image: url(images/coast.jpg); background-repeat: no-repeat; background-size: 100% 100%;}
-#yurthero {height: 300px; background-image: url(images/yurt.jpg); background-repeat: no-repeat; background-size: 100% 100%;}
-#trailhero {height: 300px; background-image: url(images/trail.jpg); background-repeat: no-repeat; background-size: 100% 100%;}
+#wrapper {background-color: #90C7E3; margin-left: auto; margin-right: auto; width: 80%; min-width: 960px; max-width: 2048px; box-shadow: 3px 3px 3px #333333;
+border: 1px solid #000033; background-image: linear-gradient(to bottom, #FFFFFF, #90C7E3);}
+#homehero {height: 300px; background-image: url(images/coast2.jpg); background-repeat: no-repeat; background-size: 100% 100%; margin-left: 190px;}
+#yurthero {height: 300px; background-image: url(images/yurt.jpg); background-repeat: no-repeat; background-size: 100% 100%; margin-left: 190px;}
+#trailhero {height: 300px; background-image: url(images/trail.jpg); background-repeat: no-repeat; background-size: 100% 100%; margin-left: 190px;}
 
+main ul {list-style-image: url(images/marker.gif);}
 
-ul {list-style-image: url(images/marker.gif);}
+footer {background-color: #FFFFFF; font-family: 'Georgia', 'Times New Roman', 'serif'; font-size: 75%; text-align: center; font-style: italic; padding: 2em; 
+	margin-left: 190px;}
 
-footer {font-family: 'Georgia', 'Times New Roman', 'serif'; font-size: 75%; 
-text-align: center; font-style: italic; padding: 2em;}
-
+* {box-sizing: border-box;}
 
