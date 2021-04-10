@@ -1,44 +1,170 @@
-/* Emma Nunnink 4/3/2021 */
-body {background-color: #eaeaea; color: #666666; font-family: 'Arial', 'Helvetica', 'sans-serif';}
-
-header {background-color: #002171; color: #FFFFFF; padding-top: 30px; padding-left: 3em; text-align: center; height: 120px;
-font-family: 'Georgia', 'Times New Roman', 'serif';}
-header a:link {color: #FFFFFF; text-decoration: none;}
-header a:visited {color: #FFFFFF; text-decoration: none;}
-header a:hover {color: #90C7E3; text-decoration: none;}
-
-nav {font-weight: bold; padding: 1.5em; font-size: 120%; float: left; width: 160px;}
-nav a {text-decoration: none;}
-nav a:link {color: #5C7FA3;}
-nav a:visited {color: #344873;}
-nav a:hover {color: #A52A2A;}
-
-nav ul {margin: 0%; padding-left: 0%; font-size: 1.2em; list-style-type: none;}
-
-main {background-color: #FFFFFF; padding-top: 1px; padding-right: 20px; padding-bottom: 20px; padding-left: 30px; display: block; margin-left: 190px; overflow: auto;}
-
-section {float: left; width: 33%; padding-left: 2em; padding-right: 2em;}
-
-h1 {color: #FFFFFF; font-family: 'Georgia', 'Times New Roman', 'serif'; margin: 0; font-size: 3em; letter-spacing: .25em;}
-
-h2 {color: #1976D2; font-family: 'Georgia', 'Times New Roman', 'serif'; text-shadow: 1px 1px #CCCCCC; }
-
-h3 {color: #000033; font-family: 'Georgia', 'Times New Roman', 'serif';}
-
-dt {color: #002171;}
-
-.resort {color: #1976D2; font-weight: bold;}
-#contact {font-size: 90%}
-#wrapper {background-color: #90C7E3; margin-left: auto; margin-right: auto; width: 80%; min-width: 960px; max-width: 2048px; box-shadow: 3px 3px 3px #333333;
-border: 1px solid #000033; background-image: linear-gradient(to bottom, #FFFFFF, #90C7E3);}
-#homehero {height: 300px; background-image: url(images/coast2.jpg); background-repeat: no-repeat; background-size: 100% 100%; margin-left: 190px;}
-#yurthero {height: 300px; background-image: url(images/yurt.jpg); background-repeat: no-repeat; background-size: 100% 100%; margin-left: 190px;}
-#trailhero {height: 300px; background-image: url(images/trail.jpg); background-repeat: no-repeat; background-size: 100% 100%; margin-left: 190px;}
-
-main ul {list-style-image: url(images/marker.gif);}
-
-footer {background-color: #FFFFFF; font-family: 'Georgia', 'Times New Roman', 'serif'; font-size: 75%; text-align: center; font-style: italic; padding: 2em; 
-	margin-left: 190px;}
-
+/* Emma Nunnink 4/9/2021 */
 * {box-sizing: border-box;}
 
+body {
+	background-color: #eaeaea; 
+	color: #666666; 
+	font-family: 'Arial', 'Helvetica', 'sans-serif';}
+
+header {
+	background-color: #002171; 
+	color: #FFFFFF; 
+	text-align: center; 
+	font-family: 'Georgia', 'Times New Roman', 'serif';}
+	header a:link {
+		color: #FFFFFF; 
+		text-decoration: none;}
+	header a:visited {
+		color: #FFFFFF; 
+		text-decoration: none;}
+	header a:hover {
+		color: #90C7E3; 
+		text-decoration: none;}
+
+nav {
+	font-weight: bold; 
+	padding: 0; 
+	font-size: 120%; 
+	text-align: center;}
+	nav a {
+		text-decoration: none;}
+	nav a:link {
+		color: #5C7FA3;}
+	nav a:visited {
+		color: #344873;}
+	nav a:hover {
+		color: #A52A2A;}
+	nav ul {
+		margin: 0%; 
+		padding-left: 0%; 
+		font-size: 1.2em; 
+		list-style-type: none; 
+		border-bottom: 1px solid #002171;}
+	nav li {
+		border-bottom: 1px solid #002171;}
+
+main {
+	background-color: #FFFFFF; 
+	padding-top: 1px; 
+	padding-right: 20px; 
+	padding-bottom: 20px; 
+	padding-left: 30px; 
+	display: block; 
+	overflow: auto;}
+	main ul {
+		list-style-image: url(images/marker.gif);}
+h1 {
+	color: #FFFFFF; 
+	font-family: 'Georgia', 'Times New Roman', 'serif'; 
+	margin: 0; 
+	letter-spacing: .25em; 
+	padding-top: .5em; 
+	padding-bottom: .5em;}
+
+h2 {
+	color: #1976D2; 
+	font-family: 'Georgia', 'Times New Roman', 'serif'; 
+	text-shadow: 1px 1px #CCCCCC; }
+
+h3 {
+	color: #000033; 
+	font-family: 'Georgia', 'Times New Roman', 'serif';}
+
+dt {
+	color: #002171;}
+.resort {
+	color: #1976D2; 
+	font-weight: bold;}
+#contact {
+	font-size: 90%}
+#wrapper {
+	background-color: #90C7E3;
+	background-image: linear-gradient(to bottom, #FFFFFF, #90C7E3);}
+#homehero {
+	height: 300px; 
+	background-image: url(images/coast2.jpg); 
+	background-repeat: no-repeat; 
+	background-size: 100% 100%;}
+#yurthero {
+	height: 300px; 
+	background-image: url(images/yurt.jpg); 
+	background-repeat: no-repeat; 
+	background-size: 100% 100%;}
+#trailhero {
+	height: 300px; 
+	background-image: url(images/trail.jpg); 
+	background-repeat: no-repeat;
+	background-size: 100% 100%;}
+
+footer {
+	background-color: #FFFFFF; 
+	font-family: 'Georgia', 'Times New Roman', 'serif'; 
+	font-size: 75%; 
+	text-align: center; 
+	font-style: italic; 
+	padding: 2em;}
+
+@media (min-width: 600px)
+{	nav ul {
+	display: grid; 
+	grid-template-rows: auto; 
+	grid-template-columns: repeat(4, auto); 
+	grid-gap: 2em; 
+	gap: 2em; 
+	flex: none;}
+	nav li {
+		border-bottom: none;}
+	section {
+		padding-left: 2em; 
+		padding-right: 2em;}
+	.content main {
+		display: grid;
+		grid-template-rows: auto;
+		grid-template-columns: 1fr 1fr 1fr;}
+	h2 {
+		grid-row: 1 / 2; 
+		grid-column: 1 / 5;}
+	section {
+		grid-row: 2 / 3; 
+		grid-column: auto;}
+	#special {
+		grid-row: auto; 
+		grid-column: 1 / 5;}
+	footer {
+		grid-row: auto; 
+		grid-column: 1 / 5;}	}
+
+@media (min-width: 1024px)
+{	nav ul {
+	flex-direction: column; 
+	padding-top: 1em; 
+	border: none; 
+	display: block; 
+	padding-right: 1em;}
+	nav {
+		text-align: left; 
+		padding-left: 1em;}
+	#wrapper {
+		margin: auto; 
+		width: 80%; 
+		border: 1px solid #002171; 
+		box-shadow: 2px 2px 2px grey; 
+		display: grid; 
+		grid-template-rows: auto auto auto auto;
+		grid-template-columns: 180px auto;}
+	header {
+		grid-row: 1 / 2; 
+		grid-column: 1 / 3;}
+	nav {
+		grid-row: 2 / 5; 
+		grid-column: 1 / 2;}
+	div {
+		grid-row: 2 / 3;
+		grid-column: 2 / 3;}
+	main {
+		grid-row: 3 / 4;
+		grid-column: 2 / 3;}
+	footer {
+		grid-row: 4 /5;
+		grid-column: 2 / 3;}
+}
