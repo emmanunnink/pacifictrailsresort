@@ -125,6 +125,11 @@ footer {
 	font-style: italic; 
 	padding: 2em;}
 
+form {
+	display: flex;
+	flex-flow: column nowrap;}
+input, textarea {margin-bottom: .5em;}
+
 @media (min-width: 600px)
 {	nav ul {
 	display: grid; 
@@ -188,4 +193,13 @@ footer {
 	footer {
 		grid-row: 4 /5;
 		grid-column: 2 / 3;}
+	form {
+		width: 60%;
+		display: grid;
+		grid-template-rows: auto;
+		grid-template-columns: 6em 1fr;
+		grid-gap: 1em; gap: 1em;}
+	input[type="submit"] {
+		grid-column: 2 / 3;
+		width: 9em;}
 }
