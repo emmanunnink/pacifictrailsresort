@@ -1,4 +1,4 @@
-/* Emma Nunnink 4/9/2021 */
+/* Emma Nunnink 5/1/2021 */
 * {box-sizing: border-box;}
 
 body {
@@ -34,7 +34,8 @@ nav {
 	nav a:visited {
 		color: #344873;}
 	nav a:hover {
-		color: #A52A2A;}
+		color: #A52A2A;
+		transition: color 3s ease-out}
 	nav ul {
 		margin: 0%; 
 		padding-left: 0%; 
@@ -130,6 +131,10 @@ form {
 	flex-flow: column nowrap;}
 input, textarea {margin-bottom: .5em;}
 
+video,embed {
+	float: right;
+	padding-left: 20px;}
+
 @media (min-width: 600px)
 {	nav ul {
 	display: grid; 
@@ -158,7 +163,16 @@ input, textarea {margin-bottom: .5em;}
 		grid-column: 1 / 5;}
 	footer {
 		grid-row: auto; 
-		grid-column: 1 / 5;}	}
+		grid-column: 1 / 5;}
+	form {
+		width: 60%;
+		display: grid;
+		grid-template-rows: auto;
+		grid-template-columns: 6em 1fr;
+		grid-gap: 1em; gap: 1em;}
+	input[type="submit"] {
+		grid-column: 2 / 3;
+		width: 9em;}}
 
 @media (min-width: 1024px)
 {	nav ul {
@@ -192,14 +206,4 @@ input, textarea {margin-bottom: .5em;}
 		grid-column: 2 / 3;}
 	footer {
 		grid-row: 4 /5;
-		grid-column: 2 / 3;}
-	form {
-		width: 60%;
-		display: grid;
-		grid-template-rows: auto;
-		grid-template-columns: 6em 1fr;
-		grid-gap: 1em; gap: 1em;}
-	input[type="submit"] {
-		grid-column: 2 / 3;
-		width: 9em;}
-}
+		grid-column: 2 / 3;}}
